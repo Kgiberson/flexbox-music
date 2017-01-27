@@ -74,4 +74,36 @@ allows for reordering the flex items within a container.
 ##### 2. Flex-grow and flex-shrink
 determine how much a flex-item should "grow" if there are spaces, or "shrink" if there are no extra spaces.
 
-They take any values ranging from 0 to any positive number `0 || positive number`
+They take any values ranging from 0 to any positive number `0 || positive number`. '0' is default, and a "turn-off" switch.
+
+##### 3. Flex-basis
+specifies the initial size of a flex-item. Before the 'flex-grow' or 'flex-shrink' properties adjust its size to fit the container or not.
+
+```
+li {
+  flex-basis: auto || ems || rems || pixels;
+}
+```
+
+##### 4. The flex shorthand
+sets flex-grow, flex-shrink, and flex-basis properties all at once. (GSB)
+
+```
+li {
+  flex: 0 1 auto; /* default behavior of all flex-items */
+}
+
+li {
+  flex: 0 0 auto; /* fixed width element whose initial width is based off of the content size */
+}
+
+li {
+  flex: 1 1 auto;
+  /* compute initial width automatically, but grow to fit the entire available space and shrink if necessary */
+}
+
+li {
+  flex: 2 1 0;
+  /* set the initial width of the flex item to zero, grow the item to fill the available space, and shrink item whenever possible */
+}
+```
