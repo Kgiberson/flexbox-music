@@ -118,3 +118,13 @@ li:first-of-type {
 ```
 
 ### Absolute and Relative flex-items
+The spacing within a relative flex item is computed based on it's content size. In an absolute flex item, it is based solely on "flex", not content.
+To make flex-items absolute:
+```
+li {
+  flex: 1; /* same as flex: 1 1 0; */
+}
+```
+
+### Auto-margin Alignment
+When you use `margin: auto;` on flex-items, things can get out of wack. When you use the auto-margin alignment on a flex-item, the justify-content property no longer works.
