@@ -107,3 +107,14 @@ li {
   /* set the initial width of the flex item to zero, grow the item to fill the available space, and shrink item whenever possible */
 }
 ```
+
+##### 5. Align-self
+allows us to change the position of a single flex-item along the cross-axis, without affecting the neighboring flex-items.
+
+```
+li:first-of-type {
+  align-self: auto || flex-start || flex-end || center || baseline || stretch
+}
+```
+
+### Absolute and Relative flex-items
