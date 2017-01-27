@@ -55,9 +55,23 @@ ul {
 ```
 
 ##### 6. Align-content
-defines how flex items are laid out on multi-line flex-containers
+defines how flex items are laid out on multi-line flex-containers.
 ```
 ul {
   align-content: flex-start || flex-end || center || stretch;
 }
 ```
+
+### The Flex Item Properties
+##### 1. Order
+allows for reordering the flex items within a container.
+```
+  li:nth-child(1) {
+    order: 1; /* give a value higher than 0 */
+  }
+```
+
+##### 2. Flex-grow and flex-shrink
+determine how much a flex-item should "grow" if there are spaces, or "shrink" if there are no extra spaces.
+
+They take any values ranging from 0 to any positive number `0 || positive number`
