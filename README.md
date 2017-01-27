@@ -118,3 +118,4 @@ li:first-of-type {
 ```
 
 ### Absolute and Relative flex-items
+The spacing within a relative flex item is computed based on it's content size. In an absolute flex item, it is based solely on "flex", not content.
